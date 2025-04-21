@@ -7,12 +7,11 @@ Mario Kart 8 Deluxe based on their associated statistics. The goal is to maximiz
 
 ## Data
 
-The script reads data from four CSV files (`drivers.csv`, `bodies.csv`, `tires.csv`, `gliders.csv`) located in a $data$
+The script reads data from four CSV files (`drivers.csv`, `bodies.csv`, `tires.csv`, `gliders.csv`) located in the `data`
 subdirectory. Each CSV file should have the first column as the unique identifier (e.g., driver name, body name) and
 subsequent columns containing numerical statistics for that item.
 This data has been extracted from
-the [Mario Kart 8 Deluxe Wiki](https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics) and is available in the
-$data$ folder.
+the [Mario Kart 8 Deluxe Wiki](https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics).
 
 The script then formulates an integer programming model to select at most one item from each category (driver, body,
 tires, glider) such that the sum of their combined statistics is maximized.
