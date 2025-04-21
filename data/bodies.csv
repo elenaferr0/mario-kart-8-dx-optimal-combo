@@ -1,0 +1,27 @@
+Body,Speed (Ground),Speed (Water),Speed (Air),Speed (Anti-Gravity),Acceleration (AC),Weight (WG),Handling (Ground),Handling (Water),Handling (Air),Handling (Anti-Gravity),(Off-Road) Traction (OF),Mini-Turbo (MT),Invincibility (IV),On-Road Traction (ON)
+Biddybuggy,0,1,1,2,7,0,5,4,4,5,4,7,0,1
+Mr. Scooty,0,1,1,2,7,0,5,4,4,5,4,7,0,1
+Streetle,2,5,2,0,6,0,4,5,3,2,6,6,3,0
+Landship,2,5,2,0,6,0,4,5,3,2,6,6,2,0
+Pipe Frame,2,3,1,1,6,1,5,4,2,4,4,6,3,3
+Varmint,2,3,1,1,6,1,5,4,2,4,4,6,2,3
+City Tripper,2,3,1,1,6,1,5,4,2,4,4,6,2,3
+Cat Cruiser,2,2,4,3,5,2,4,2,4,3,3,6,3,4
+Comet,2,2,4,3,5,2,4,2,4,3,3,6,3,4
+Yoshi Bike,2,2,4,3,5,2,4,2,4,3,3,6,2,4
+Teddy Buggy,2,2,4,3,5,2,4,2,4,3,3,6,1,4
+W 25 Silver Arrow,2,2,3,4,5,1,4,3,3,4,5,5,4,3
+Wild Wiggler,2,2,3,4,5,1,4,3,3,4,5,5,4,3
+Standard Bike,2,2,3,4,5,1,4,3,3,4,5,5,4,3
+Flame Rider,2,2,3,4,5,1,4,3,3,4,5,5,4,3
+Mach 8,3,3,4,5,3,3,2,2,2,4,4,5,3,2
+Sports Coupe,3,3,4,5,3,3,2,2,2,4,4,5,3,2
+Inkstriker,3,3,4,5,3,3,2,2,2,4,4,5,1,2
+Tanooki Kart,3,4,3,3,2,3,4,4,3,3,7,5,4,4
+Koopa Clown,3,4,3,3,2,3,4,4,3,3,7,5,3,4
+Master Cycle Zero,3,4,3,3,2,3,4,4,3,3,7,5,3,4
+300 SL Roadster,3,3,3,3,4,2,3,2,3,3,3,5,4,3
+Standard Kart,3,3,3,3,4,2,3,2,3,3,3,5,3,3
+The Duke,3,3,3,3,4,2,3,2,3,3,3,5,3,3
+Blue Falcon,4,2,3,4,3,0,2,3,1,5,3,4,4,1
+Splat Buggy,4,2,3,4,3,0,2,3,1,5,3,4,1,1
