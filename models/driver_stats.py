@@ -15,6 +15,5 @@ class Driver(BaseStats):
         self.size = size
 
     def __repr__(self):
-        return (f"Driver(name='{self.name}', image_url='{self.image_url}', size='{self.size}', "
+        return (f"Driver(name='{self.name}'\nimage_url='{self.image_url}'\nsize='{self.size}'\n"
                 f"{super().__repr__()})")
-
