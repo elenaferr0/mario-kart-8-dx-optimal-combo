@@ -1,6 +1,6 @@
-# Mario Kart 8 Deluxe Optimization Project
+# Mario Kart 8 Deluxe Optimal Combos
 
-This project uses mathematical programming with the `docplex` library in Python to find the optimal combination of driver, body, tires, and glider in Mario Kart 8 Deluxe based on their associated statistics. The goal is to maximize the sum of the chosen parts' stats.
+This project uses the `docplex` library in Python to find the optimal combination of driver, body, tires, and glider in Mario Kart 8 Deluxe based on their associated statistics. The goal is to maximize the sum of the chosen parts' stats.
 
 ## Data
 
@@ -45,18 +45,23 @@ For the sake of simplicity and brevity, the following notation is used:
 - `gs_i`: the sum of all statistics for the glider `i`
 
 For instance,
+
 $$
 ds\_(\text{biddybuggy}) = \text{Speed (Ground)} + \text{Speed (Water)} + \text{Speed (Air)} + \text{Speed (Anti-Gravity)} + \text{Acceleration (AC)} + \text{Weight (WG)} + \text{Handling (Ground)} + \text{Handling (Water)} + \text{Handling (Air)} + \text{Handling (Anti-Gravity)} + \text{(Off-Road) Traction (OF)} + \text{Mini-Turbo (MT)} + \text{Invincibility (IV)} + \text{On-Road Traction (ON)}
 $$
+
 $$
 = 0 + 1 + 1 + 2 + 7 + 0 + 5 + 4 = 20
 $$
 
 Objective function:
+
 $$
 max \sum_{i=1}^{|D|} d_i \cdot ds_i + \sum_{i=1}^{|B|} b_i \cdot bs_i + \sum_{i=1}^{|T|} t_i \cdot ts_i + \sum_{i=1}^{|G|} g_i \cdot gs_i
 $$
+
 $s.t.$
+
 $$
 \sum_{i=1}^{|D|} d_i \leq 1 \quad\forall i \in D \quad\quad\text{(1)}
 $$

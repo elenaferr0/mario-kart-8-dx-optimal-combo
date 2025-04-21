@@ -36,7 +36,7 @@ def get_best_combo(m: Model) -> Model:
 
 def print_sln(m: Model) -> None:
     obj = m.objective_value
-    print("Model solved with objective: {:g}".format(obj))
+    print("Objective fun: {:g}".format(obj))
 
     print("Optimal solution:")
     selected_driver = [i for i in drivers.keys() if m.get_var_by_name(f'd({i})').solution_value > 0.5]
