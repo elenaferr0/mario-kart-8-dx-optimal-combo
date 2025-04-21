@@ -1,4 +1,6 @@
-# Mario Kart 8 Deluxe Optimal Combos
+# Combinatorial Optimization for Mario Kart 8 Deluxe
+
+<img src="./imgs/wallpaper.png" style="border-radius: 10px">
 
 This project uses the $docplex$ library in Python to find the optimal combination of driver, body, tires, and glider in
 Mario Kart 8 Deluxe based on their associated statistics. The goal is to maximize the sum of the chosen parts' stats.
