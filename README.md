@@ -19,9 +19,9 @@ tires, glider) such that the sum of their combined statistics is maximized.
 
 * **Python 3.x:** (any version >= 3.6 and <= 3.8.x)
 * **CPLEX Optimization Studio or CPLEX Python API ($docplex$):**
-   $$`bash
+   ```bash
    pip install cplex docplex
-   $$`
+   ```
 
 ## Stats
 
