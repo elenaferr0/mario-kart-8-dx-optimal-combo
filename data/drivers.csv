@@ -1,55 +1,55 @@
-Character,Speed (Ground),Speed (Water),Speed (Air),Speed (Anti-Gravity),Acceleration (AC),Weight (WG),Handling (Ground),Handling (Water),Handling (Air),Handling (Anti-Gravity),(Off-Road) Traction (OF),Mini-Turbo (MT),Invincibility (IV),On-Road Traction (ON)
-Baby Peach,1,1,1,1,4,0,10,10,10,10,5,5,6,3
-Baby Daisy,1,1,1,1,4,0,10,10,10,10,5,5,6,3
-Baby Rosalina,1,1,1,1,5,0,9,9,9,9,3,5,6,4
-Lemmy,1,1,1,1,5,0,9,9,9,9,3,5,6,4
-Baby Mario,2,2,2,2,5,1,8,8,8,8,4,5,5,2
-Baby Luigi,2,2,2,2,5,1,8,8,8,8,4,5,5,2
-Dry Bones,2,2,2,2,5,1,8,8,8,8,4,5,5,2
-Mii (Light),2,2,2,2,5,1,8,8,8,8,4,5,5,2
-Koopa Troopa,3,3,3,3,4,2,8,8,8,8,5,4,4,1
-Lakitu,3,3,3,3,4,2,8,8,8,8,5,4,4,1
-Bowser Jr.,3,3,3,3,4,2,8,8,8,8,5,4,4,1
-Toadette,3,3,3,3,5,2,7,7,7,7,2,4,3,4
-Wendy,3,3,3,3,5,2,7,7,7,7,2,4,3,4
-Isabelle,3,3,3,3,5,2,7,7,7,7,2,4,3,4
-Toad,4,4,4,4,4,3,7,7,7,7,4,4,3,3
-Shy Guy,4,4,4,4,4,3,7,7,7,7,4,4,3,3
-Larry,4,4,4,4,4,3,7,7,7,7,4,4,3,3
-Cat Peach,5,5,5,5,4,3,6,6,6,6,3,4,3,2
-Inkling,5,5,5,5,4,3,6,6,6,6,3,4,3,2
-Villager,5,5,5,5,4,3,6,6,6,6,3,4,3,2
-Diddy Kong,5,5,5,5,4,3,6,6,6,6,3,4,3,2
-Peach,6,6,6,6,3,4,5,5,5,5,3,4,1,3
-Daisy,6,6,6,6,3,4,5,5,5,5,3,4,1,3
-Yoshi,6,6,6,6,3,4,5,5,5,5,3,4,1,3
-Birdo,6,6,6,6,3,4,5,5,5,5,3,4,1,3
-Peachette,6,6,6,6,3,4,5,5,5,5,3,4,1,3
-Tanooki Mario,6,6,6,6,3,5,5,5,5,5,1,4,1,7
-Inkling,6,6,6,6,3,5,5,5,5,5,1,4,1,7
-Villager,6,6,6,6,3,5,5,5,5,5,1,4,1,7
-Mario,7,7,7,7,2,6,4,4,4,4,2,3,3,4
-Ludwig,7,7,7,7,2,6,4,4,4,4,2,3,3,4
-Mii (Medium),7,7,7,7,2,6,4,4,4,4,2,3,3,4
-Luigi,7,7,7,7,2,6,5,5,5,5,1,3,3,5
-Iggy,7,7,7,7,2,6,5,5,5,5,1,3,3,5
-Kamek,7,7,7,7,2,6,5,5,5,5,1,3,3,5
-Metal Mario,8,8,8,8,1,10,3,3,3,3,1,1,3,8
-Gold Mario,8,8,8,8,1,10,3,3,3,3,1,1,3,8
-Pink Gold Peach,8,8,8,8,1,10,3,3,3,3,1,1,3,8
-Wiggler,9,9,9,9,1,8,2,2,2,2,0,1,4,10
-Rosalina,8,8,8,8,1,7,3,3,3,3,3,2,4,9
-King Boo,8,8,8,8,1,7,3,3,3,3,3,2,4,9
-Link,8,8,8,8,1,7,3,3,3,3,3,2,4,9
-Link,8,8,8,8,1,7,3,3,3,3,3,2,4,9
-Pauline,8,8,8,8,1,7,3,3,3,3,3,2,4,9
-Petey Piranha,8,8,8,8,1,10,3,3,3,3,1,1,6,8
-Waluigi,9,9,9,9,1,8,2,2,2,2,0,1,4,10
-Donkey Kong,9,9,9,9,1,8,2,2,2,2,0,1,4,10
-Roy,9,9,9,9,1,8,2,2,2,2,0,1,4,10
-Wario,10,10,10,10,0,9,1,1,1,1,1,0,5,5
-Dry Bowser,10,10,10,10,0,9,1,1,1,1,1,0,5,5
-Funky Kong,10,10,10,10,0,9,1,1,1,1,1,0,5,5
-Mii (Heavy),10,10,10,10,0,9,1,1,1,1,1,0,5,5
-Bowser,10,10,10,10,0,10,0,0,0,0,0,0,6,6
-Morton,10,10,10,10,0,10,0,0,0,0,0,0,6,6
+Name,Image URL,Size,Speed (Ground),Speed (Water),Speed (Air),Speed (Anti-Gravity),Acceleration (AC),Weight (WG),Handling (Ground),Handling (Water),Handling (Air),Handling (Anti-Gravity),(Off-Road) Traction (OF),Mini-Turbo (MT),Invincibility (IV),On-Road Traction (ON)
+Baby Peach,https://mario.wiki.gallery/images/3/3d/MK8_BabyPeach_Icon.png,Small,1,1,1,1,4,0,10,10,10,10,5,5,6,3
+Baby Daisy,https://mario.wiki.gallery/images/4/43/MK8_BabyDaisy_Icon.png,Small,1,1,1,1,4,0,10,10,10,10,5,5,6,3
+Baby Rosalina,https://mario.wiki.gallery/images/0/09/MK8_BabyRosalina_Icon.png,Small,1,1,1,1,5,0,9,9,9,9,3,5,6,4
+Lemmy,https://mario.wiki.gallery/images/f/fc/MK8_Lemmy_Icon.png,Small,1,1,1,1,5,0,9,9,9,9,3,5,6,4
+Baby Mario,https://mario.wiki.gallery/images/d/d2/MK8_BabyMario_Icon.png,Small,2,2,2,2,5,1,8,8,8,8,4,5,5,2
+Baby Luigi,https://mario.wiki.gallery/images/a/aa/MK8_BabyLuigi_Icon.png,Small,2,2,2,2,5,1,8,8,8,8,4,5,5,2
+Dry Bones,https://mario.wiki.gallery/images/3/3f/MK8DX_Dry_Bones_Icon.png,Small,2,2,2,2,5,1,8,8,8,8,4,5,5,2
+Mii (Light),https://mario.wiki.gallery/images/b/bb/Mii_MK8.png,Small,2,2,2,2,5,1,8,8,8,8,4,5,5,2
+Koopa Troopa,https://mario.wiki.gallery/images/b/bc/MK8_Koopa_Icon.png,Small,3,3,3,3,4,2,8,8,8,8,5,4,4,1
+Lakitu,https://mario.wiki.gallery/images/7/7d/MK8_Lakitu_Icon.png,Small,3,3,3,3,4,2,8,8,8,8,5,4,4,1
+Bowser Jr.,https://mario.wiki.gallery/images/2/26/MK8_Bowser_Jr_Icon.png,Small,3,3,3,3,4,2,8,8,8,8,5,4,4,1
+Toadette,https://mario.wiki.gallery/images/8/8e/MK8_Toadette_Icon.png,Small,3,3,3,3,5,2,7,7,7,7,2,4,3,4
+Wendy,https://mario.wiki.gallery/images/d/d9/MK8_Wendy_Icon.png,Small,3,3,3,3,5,2,7,7,7,7,2,4,3,4
+Isabelle,https://mario.wiki.gallery/images/2/20/MK8_Isabelle_Icon.png,Small,3,3,3,3,5,2,7,7,7,7,2,4,3,4
+Toad,https://mario.wiki.gallery/images/4/45/MK8_Toad_Icon.png,Small,4,4,4,4,4,3,7,7,7,7,4,4,3,3
+Shy Guy,https://mario.wiki.gallery/images/7/7f/MK8_ShyGuy_Icon.png,Small,4,4,4,4,4,3,7,7,7,7,4,4,3,3
+Larry,https://mario.wiki.gallery/images/c/c2/MK8_Larry_Icon.png,Small,4,4,4,4,4,3,7,7,7,7,4,4,3,3
+Cat Peach,https://mario.wiki.gallery/images/a/ad/MK8_Cat_Peach_Icon.png,Medium,5,5,5,5,4,3,6,6,6,6,3,4,3,2
+Inkling (Female),https://mario.wiki.gallery/images/b/b9/MK8DX_Female_Inkling_Icon.png,Medium,5,5,5,5,4,3,6,6,6,6,3,4,3,2
+Villager (Female),https://mario.wiki.gallery/images/c/c3/VillagerFemale-Icon-MK8.png,Medium,5,5,5,5,4,3,6,6,6,6,3,4,3,2
+Diddy Kong,https://mario.wiki.gallery/images/8/82/MK8DX_Diddy_Kong_Icon.png,Medium,5,5,5,5,4,3,6,6,6,6,3,4,3,2
+Peach,https://mario.wiki.gallery/images/c/c2/MK8_Peach_Icon.png,Medium,6,6,6,6,3,4,5,5,5,5,3,4,1,3
+Daisy,https://mario.wiki.gallery/images/3/32/MK8_Daisy_Icon.png,Medium,6,6,6,6,3,4,5,5,5,5,3,4,1,3
+Yoshi,https://mario.wiki.gallery/images/9/91/MK8_Yoshi_Icon.png,Medium,6,6,6,6,3,4,5,5,5,5,3,4,1,3
+Birdo,https://mario.wiki.gallery/images/2/2b/MKT_Icon_Birdo.png,Medium,6,6,6,6,3,4,5,5,5,5,3,4,1,3
+Peachette,https://mario.wiki.gallery/images/f/fd/MK8DX_Peachette_Icon.png,Medium,6,6,6,6,3,4,5,5,5,5,3,4,1,3
+Tanooki Mario,https://mario.wiki.gallery/images/a/a2/MK8_Tanooki_Mario_Icon.png,Medium,6,6,6,6,3,5,5,5,5,5,1,4,1,7
+Inkling (Male),https://mario.wiki.gallery/images/3/3c/MK8DX_Male_Inkling_Icon.png,Medium,6,6,6,6,3,5,5,5,5,5,1,4,1,7
+Villager (Male),https://mario.wiki.gallery/images/1/16/VillagerMale-Icon-MK8.png,Medium,6,6,6,6,3,5,5,5,5,5,1,4,1,7
+Mario,https://mario.wiki.gallery/images/d/d9/MK8_Mario_Icon.png,Medium,7,7,7,7,2,6,4,4,4,4,2,3,3,4
+Ludwig,https://mario.wiki.gallery/images/a/a8/MK8_Ludwig_Icon.png,Medium,7,7,7,7,2,6,4,4,4,4,2,3,3,4
+Mii (Medium),https://mario.wiki.gallery/images/b/bb/Mii_MK8.png,Medium,7,7,7,7,2,6,4,4,4,4,2,3,3,4
+Luigi,https://mario.wiki.gallery/images/5/51/MK8_Luigi_Icon.png,Medium,7,7,7,7,2,6,5,5,5,5,1,3,3,5
+Iggy,https://mario.wiki.gallery/images/d/dd/MK8_Iggy_Icon.png,Medium,7,7,7,7,2,6,5,5,5,5,1,3,3,5
+Kamek,https://mario.wiki.gallery/images/0/00/MK8DX_Kamek_Icon.png,Medium,7,7,7,7,2,6,5,5,5,5,1,3,3,5
+Metal Mario,https://mario.wiki.gallery/images/e/e3/MK8_MMario_Icon.png,Medium,8,8,8,8,1,10,3,3,3,3,1,1,3,8
+Gold Mario,https://mario.wiki.gallery/images/c/c8/MK8DX_Gold_Mario_Icon.png,Medium,8,8,8,8,1,10,3,3,3,3,1,1,3,8
+Pink Gold Peach,https://mario.wiki.gallery/images/0/0d/MK8_PGPeach_Icon.png,Medium,8,8,8,8,1,10,3,3,3,3,1,1,3,8
+Wiggler,https://mario.wiki.gallery/images/7/7e/MK8DX_Wiggler_Icon.png,Medium,9,9,9,9,1,8,2,2,2,2,0,1,4,10
+Rosalina,https://mario.wiki.gallery/images/8/89/MK8_Rosalina_Icon.png,Large,8,8,8,8,1,7,3,3,3,3,3,2,4,9
+King Boo,https://mario.wiki.gallery/images/1/1d/MK8DX_King_Boo_Icon.png,Large,8,8,8,8,1,7,3,3,3,3,3,2,4,9
+Link,https://mario.wiki.gallery/images/9/9e/MK8D_BotW_Link_Icon.png,Large,8,8,8,8,1,7,3,3,3,3,3,2,4,9
+Link,https://mario.wiki.gallery/images/e/e8/MK8_Link_Icon.png,Large,8,8,8,8,1,7,3,3,3,3,3,2,4,9
+Pauline,https://mario.wiki.gallery/images/d/dd/MK8DX_Pauline_Icon.png,Large,8,8,8,8,1,7,3,3,3,3,3,2,4,9
+Petey Piranha,https://mario.wiki.gallery/images/8/86/MK8DX_Petey_Piranha_Icon.png,Large,8,8,8,8,1,10,3,3,3,3,1,1,6,8
+Waluigi,https://mario.wiki.gallery/images/7/78/MK8_Waluigi_Icon.png,Large,9,9,9,9,1,8,2,2,2,2,0,1,4,10
+Donkey Kong,https://mario.wiki.gallery/images/0/08/MK8_DKong_Icon.png,Large,9,9,9,9,1,8,2,2,2,2,0,1,4,10
+Roy,https://mario.wiki.gallery/images/3/3e/MK8_Roy_Icon.png,Large,9,9,9,9,1,8,2,2,2,2,0,1,4,10
+Wario,https://mario.wiki.gallery/images/c/c2/MK8_Wario_Icon.png,Large,10,10,10,10,0,9,1,1,1,1,1,0,5,5
+Dry Bowser,https://mario.wiki.gallery/images/2/29/MK8_Dry_Bowser_Icon.png,Large,10,10,10,10,0,9,1,1,1,1,1,0,5,5
+Funky Kong,https://mario.wiki.gallery/images/4/4a/MK8DX_Funky_Kong_Icon.png,Large,10,10,10,10,0,9,1,1,1,1,1,0,5,5
+Mii (Heavy),https://mario.wiki.gallery/images/b/bb/Mii_MK8.png,Large,10,10,10,10,0,9,1,1,1,1,1,0,5,5
+Bowser,https://mario.wiki.gallery/images/4/47/MK8_Bowser_Icon.png,Large,10,10,10,10,0,10,0,0,0,0,0,0,6,6
+Morton,https://mario.wiki.gallery/images/7/72/MK8_Morton_Icon.png,Large,10,10,10,10,0,10,0,0,0,0,0,0,6,6

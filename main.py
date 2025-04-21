@@ -1,24 +1,13 @@
+import os
+from typing import Dict
+
 from docplex.mp.model import Model
-import csv
 
-
-def build_dict(csv_file_path):
-    data_dict = {}
-    try:
-        with open(csv_file_path, 'r', newline='', encoding='utf-8') as csvfile:
-            reader = csv.reader(csvfile)
-            header = next(reader, None)  # Read the header row (optional)
-            if header:
-                for row in reader:
-                    if row:  # Ensure the row is not empty
-                        key = row[0].strip()
-                        values = tuple(row[1:])
-                        data_dict[key] = list(map(int, values))
-            else:
-                print(f"Warning: CSV file at '{csv_file_path}' is empty.")
-    except FileNotFoundError:
-        print(f"Error: CSV file not found at '{csv_file_path}'.")
-    return data_dict
+from models.driver_stats import Driver
+from models.body_stats import Body
+from models.glider_stats import Glider
+from models.tire_stats import Tire
+from models.parser import parse_csv_data
 
 
 def get_best_combo(m: Model) -> Model:
@@ -35,10 +24,11 @@ def get_best_combo(m: Model) -> Model:
     m.add_constraint(m.sum(g[i] for i in gliders.keys()) <= 1, 'one_glider')
 
     # Maximize the total score
-    driver_score = m.sum(d[i] * sum(drivers[i]) for i in drivers.keys())
-    body_score = m.sum(b[i] * sum(bodies[i]) for i in bodies.keys())
-    tire_score = m.sum(t[i] * sum(tires[i]) for i in tires.keys())
-    glider_score = m.sum(g[i] * sum(gliders[i]) for i in gliders.keys())
+    driver_score = m.sum(d[i] * drivers[i].sum() for i in drivers.keys())
+    body_score = m.sum(b[i] * bodies[i].sum() for i in bodies.keys())
+    tire_score = m.sum(t[i] * tires[i].sum() for i in tires.keys())
+    glider_score = m.sum(g[i] * gliders[i].sum() for i in gliders.keys())
+
     m.maximize(driver_score + body_score + tire_score + glider_score)
 
     return m
@@ -63,10 +53,13 @@ def print_sln(m: Model) -> None:
 
 
 if __name__ == '__main__':
-    drivers = build_dict('data/drivers.csv')
-    bodies = build_dict('data/bodies.csv')
-    tires = build_dict('data/tires.csv')
-    gliders = build_dict('data/gliders.csv')
+    this_file_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(this_file_dir, 'data')
+
+    drivers: Dict[str, Driver] = parse_csv_data(data_dir + '/drivers.csv', Driver)
+    bodies: Dict[str, Body] = parse_csv_data(data_dir + '/bodies.csv', Body)
+    tires: Dict[str, Tire] = parse_csv_data(data_dir + '/tires.csv', Tire)
+    gliders: Dict[str, Glider] = parse_csv_data(data_dir + '/gliders.csv', Glider)
 
     with Model(name='mk-8-dx-stats') as model:
         model = get_best_combo(model)

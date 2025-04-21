@@ -1,16 +1,16 @@
-Glider,Speed (Ground),Speed (Water),Speed (Air),Speed (Anti-Gravity),Acceleration (AC),Weight (WG),Handling (Ground),Handling (Water),Handling (Air),Handling (Anti-Gravity),(Off-Road) Traction (OF),Mini-Turbo (MT),Invincibility (IV),On-Road Traction (ON)
-Cloud Glider,0,1,1,1,2,0,1,0,2,1,1,2,0,1
-Parachute,0,1,1,1,2,0,1,0,2,1,1,2,0,1
-Flower Glider,0,1,1,1,2,0,1,0,2,1,1,2,0,1
-Paper Glider,0,1,1,1,2,0,1,0,2,1,1,2,0,1
-Peach Parasol,0,0,1,1,2,1,1,1,2,0,0,2,0,2
-Parafoil,0,0,1,1,2,1,1,1,2,0,0,2,0,2
-Bowser Kite,0,0,1,1,2,1,1,1,2,0,0,2,0,2
-MKTV Parafoil,0,0,1,1,2,1,1,1,2,0,0,2,0,2
-Wario Wing,1,0,2,1,1,2,1,1,1,0,0,1,1,2
-Plane Glider,1,0,2,1,1,2,1,1,1,0,0,1,1,2
-Gold Glider,1,0,2,1,1,2,1,1,1,0,0,1,1,2
-Paraglider (The Legend of Zelda),1,0,2,1,1,2,1,1,1,0,0,1,1,2
-Super Glider,1,1,2,0,1,1,1,0,1,1,1,1,1,1
-Waddle Wing,1,1,2,0,1,1,1,0,1,1,1,1,1,1
-Hylian Kite,1,1,2,0,1,1,1,0,1,1,1,1,1,1
+Name,Image URL,Speed (Ground),Speed (Water),Speed (Air),Speed (Anti-Gravity),Acceleration (AC),Weight (WG),Handling (Ground),Handling (Water),Handling (Air),Handling (Anti-Gravity),(Off-Road) Traction (OF),Mini-Turbo (MT),Invincibility (IV),On-Road Traction (ON)
+Cloud Glider,https://mario.wiki.gallery/images/8/84/Cloud_Glider.png,0,1,1,1,2,0,1,0,2,1,1,2,0,1
+Parachute,https://mario.wiki.gallery/images/d/dd/ParachuteGliderMK8.png,0,1,1,1,2,0,1,0,2,1,1,2,0,1
+Flower Glider,https://mario.wiki.gallery/images/b/b3/FlowerGliderMK8.png,0,1,1,1,2,0,1,0,2,1,1,2,0,1
+Paper Glider,https://mario.wiki.gallery/images/0/0e/PaperGliderIcon-MK8.png,0,1,1,1,2,0,1,0,2,1,1,2,0,1
+Peach Parasol,https://mario.wiki.gallery/images/6/6e/PeachParasolGliderMK8.png,0,0,1,1,2,1,1,1,2,0,0,2,0,2
+Parafoil,https://mario.wiki.gallery/images/c/c4/ParafoilGliderMK8.png,0,0,1,1,2,1,1,1,2,0,0,2,0,2
+Bowser Kite,https://mario.wiki.gallery/images/f/f7/BowserKiteMK8.png,0,0,1,1,2,1,1,1,2,0,0,2,0,2
+MKTV Parafoil,https://mario.wiki.gallery/images/9/96/MKTVParafoilGliderMK8.png,0,0,1,1,2,1,1,1,2,0,0,2,0,2
+Wario Wing,https://mario.wiki.gallery/images/a/ae/WarioWingMK8.png,1,0,2,1,1,2,1,1,1,0,0,1,1,2
+Plane Glider,https://mario.wiki.gallery/images/c/ca/PlaneGliderMK8.png,1,0,2,1,1,2,1,1,1,0,0,1,1,2
+Gold Glider,https://mario.wiki.gallery/images/1/18/GoldGliderMK8.png,1,0,2,1,1,2,1,1,1,0,0,1,1,2
+Paraglider (The Legend of Zelda),https://mario.wiki.gallery/images/3/39/MK8D_Paraglider.png,1,0,2,1,1,2,1,1,1,0,0,1,1,2
+Super Glider,https://mario.wiki.gallery/images/a/a8/SuperGliderMK8.png,1,1,2,0,1,1,1,0,1,1,1,1,1,1
+Waddle Wing,https://mario.wiki.gallery/images/e/ef/WaddleWingMK8.png,1,1,2,0,1,1,1,0,1,1,1,1,1,1
+Hylian Kite,https://mario.wiki.gallery/images/9/9c/MK8-HylianKite.png,1,1,2,0,1,1,1,0,1,1,1,1,1,1

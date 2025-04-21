@@ -1,27 +1,27 @@
-Body,Speed (Ground),Speed (Water),Speed (Air),Speed (Anti-Gravity),Acceleration (AC),Weight (WG),Handling (Ground),Handling (Water),Handling (Air),Handling (Anti-Gravity),(Off-Road) Traction (OF),Mini-Turbo (MT),Invincibility (IV),On-Road Traction (ON)
-Biddybuggy,0,1,1,2,7,0,5,4,4,5,4,7,0,1
-Mr. Scooty,0,1,1,2,7,0,5,4,4,5,4,7,0,1
-Streetle,2,5,2,0,6,0,4,5,3,2,6,6,3,0
-Landship,2,5,2,0,6,0,4,5,3,2,6,6,2,0
-Pipe Frame,2,3,1,1,6,1,5,4,2,4,4,6,3,3
-Varmint,2,3,1,1,6,1,5,4,2,4,4,6,2,3
-City Tripper,2,3,1,1,6,1,5,4,2,4,4,6,2,3
-Cat Cruiser,2,2,4,3,5,2,4,2,4,3,3,6,3,4
-Comet,2,2,4,3,5,2,4,2,4,3,3,6,3,4
-Yoshi Bike,2,2,4,3,5,2,4,2,4,3,3,6,2,4
-Teddy Buggy,2,2,4,3,5,2,4,2,4,3,3,6,1,4
-W 25 Silver Arrow,2,2,3,4,5,1,4,3,3,4,5,5,4,3
-Wild Wiggler,2,2,3,4,5,1,4,3,3,4,5,5,4,3
-Standard Bike,2,2,3,4,5,1,4,3,3,4,5,5,4,3
-Flame Rider,2,2,3,4,5,1,4,3,3,4,5,5,4,3
-Mach 8,3,3,4,5,3,3,2,2,2,4,4,5,3,2
-Sports Coupe,3,3,4,5,3,3,2,2,2,4,4,5,3,2
-Inkstriker,3,3,4,5,3,3,2,2,2,4,4,5,1,2
-Tanooki Kart,3,4,3,3,2,3,4,4,3,3,7,5,4,4
-Koopa Clown,3,4,3,3,2,3,4,4,3,3,7,5,3,4
-Master Cycle Zero,3,4,3,3,2,3,4,4,3,3,7,5,3,4
-300 SL Roadster,3,3,3,3,4,2,3,2,3,3,3,5,4,3
-Standard Kart,3,3,3,3,4,2,3,2,3,3,3,5,3,3
-The Duke,3,3,3,3,4,2,3,2,3,3,3,5,3,3
-Blue Falcon,4,2,3,4,3,0,2,3,1,5,3,4,4,1
-Splat Buggy,4,2,3,4,3,0,2,3,1,5,3,4,1,1
+Name,Image URL,Vehicle Type,Speed (Ground),Speed (Water),Speed (Air),Speed (Anti-Gravity),Acceleration (AC),Weight (WG),Handling (Ground),Handling (Water),Handling (Air),Handling (Anti-Gravity),(Off-Road) Traction (OF),Mini-Turbo (MT),Invincibility (IV),On-Road Traction (ON)
+Biddybuggy,https://mario.wiki.gallery/images/4/45/BiddybuggyBodyMK8.png,Kart,0,1,1,2,7,0,5,4,4,5,4,7,0,1
+Mr. Scooty,https://mario.wiki.gallery/images/1/18/MrScootyBodyMK8.png,Standard Bike,0,1,1,2,7,0,5,4,4,5,4,7,0,1
+Streetle,https://mario.wiki.gallery/images/c/cf/MK8Streetle.png,Kart,2,5,2,0,6,0,4,5,3,2,6,6,3,0
+Landship,https://mario.wiki.gallery/images/6/6d/LandshipBodyMK8.png,Kart,2,5,2,0,6,0,4,5,3,2,6,6,2,0
+Pipe Frame,https://mario.wiki.gallery/images/d/d1/PipeFrameBodyMK8.png,Kart,2,3,1,1,6,1,5,4,2,4,4,6,3,3
+Varmint,https://mario.wiki.gallery/images/d/d0/VarmintBodyMK8.png,Standard Bike,2,3,1,1,6,1,5,4,2,4,4,6,2,3
+City Tripper,https://mario.wiki.gallery/images/b/be/MK8_Light-Green_City_Tripper.png,Standard Bike,2,3,1,1,6,1,5,4,2,4,4,6,2,3
+Cat Cruiser,https://mario.wiki.gallery/images/f/f4/CatCruiserBodyMK8.png,Kart,2,2,4,3,5,2,4,2,4,3,3,6,3,4
+Comet,https://mario.wiki.gallery/images/0/0e/CometBodyMK8.png,Sport Bike,2,2,4,3,5,2,4,2,4,3,3,6,3,4
+Yoshi Bike,https://mario.wiki.gallery/images/6/62/YoshiBikeBodyMK8.png,Sport Bike,2,2,4,3,5,2,4,2,4,3,3,6,2,4
+Teddy Buggy,https://mario.wiki.gallery/images/f/fa/TeddyBuggyBodyMK8.png,ATV,2,2,4,3,5,2,4,2,4,3,3,6,1,4
+W 25 Silver Arrow,https://mario.wiki.gallery/images/2/25/W25SilverArrow-MK8.png,Kart,2,2,3,4,5,1,4,3,3,4,5,5,4,3
+Wild Wiggler,https://mario.wiki.gallery/images/a/aa/WildWigglerBodyMK8.png,ATV,2,2,3,4,5,1,4,3,3,4,5,5,4,3
+Standard Bike,https://mario.wiki.gallery/images/8/84/StandardBikeBodyMK8.png,Standard Bike,2,2,3,4,5,1,4,3,3,4,5,5,4,3
+Flame Rider,https://mario.wiki.gallery/images/3/31/FlameRiderBodyMK8.png,Standard Bike,2,2,3,4,5,1,4,3,3,4,5,5,4,3
+Mach 8,https://mario.wiki.gallery/images/d/df/Mach8BodyMK8.png,Kart,3,3,4,5,3,3,2,2,2,4,4,5,3,2
+Sports Coupe,https://mario.wiki.gallery/images/f/f8/SportsCoupeMK8.png,Kart,3,3,4,5,3,3,2,2,2,4,4,5,3,2
+Inkstriker,https://mario.wiki.gallery/images/e/eb/MK8DX_Inkstriker.png,ATV,3,3,4,5,3,3,2,2,2,4,4,5,1,2
+Tanooki Kart,https://mario.wiki.gallery/images/7/76/MK8_Tanooki_Buggy_Sprite.png,Kart,3,4,3,3,2,3,4,4,3,3,7,5,4,4
+Koopa Clown,https://mario.wiki.gallery/images/7/70/MK8DX_Koopa_Clown.png,Kart,3,4,3,3,2,3,4,4,3,3,7,5,3,4
+Master Cycle Zero,https://mario.wiki.gallery/images/2/26/MK8D_Master_Cycle_Zero.png,Standard Bike,3,4,3,3,2,3,4,4,3,3,7,5,3,4
+300 SL Roadster,https://mario.wiki.gallery/images/f/f4/300SLRoadster_MK8.png,Kart,3,3,3,3,4,2,3,2,3,3,3,5,4,3
+Standard Kart,https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png,Kart,3,3,3,3,4,2,3,2,3,3,3,5,3,3
+The Duke,https://mario.wiki.gallery/images/8/8a/TheDukeBodyMK8.png,Standard Bike,3,3,3,3,4,2,3,2,3,3,3,5,3,3
+Blue Falcon,https://mario.wiki.gallery/images/f/f6/MK8BlueFalcon.png,Kart,4,2,3,4,3,0,2,3,1,5,3,4,4,1
+Splat Buggy,https://mario.wiki.gallery/images/6/63/MK8DX_Splat_Buggy.png,ATV,4,2,3,4,3,0,2,3,1,5,3,4,1,1
