@@ -118,7 +118,7 @@ $$
 
 #### Results
 > [!NOTE]
-> Several _equivalent_ combinations will yield the same total score (e.g. Wario Wing, Plane Glider, Gold Glider and Paraglider for the _Best Overall_ combo). They will be listed exaustively on the right column of the table.
+> Several _equivalent_ combinations will yield the same total score (e.g. Wario Wing, Plane Glider, Gold Glider and Paraglider for the _Best Overall_ combo). They will be listed exaustively on the right column of each result table.
 
 ###### Best Overall
 
