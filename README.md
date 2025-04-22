@@ -115,10 +115,11 @@ $$
 ds_i = \text{Speed (Ground)} + \text{Speed (Water)} + \text{Speed (Air)} + \text{Speed (Anti-Gravity)}
 $$
 
-> [!INFO]
-> Several combinations will yield the same total score. All the options which give that same score are grouped in the same solution in the tables below.
 
 #### Results
+> [!INFO]
+> Several _equivalent_ combinations will yield the same total score (e.g. Wario Wing, Plane Glider, Gold Glider and Paraglider for the _Best Overall_ combo). They will be listed exaustively on the right column of the table.
+
 ###### Best Overall
 
 | Component | Solution |
