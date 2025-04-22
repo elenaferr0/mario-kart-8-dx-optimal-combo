@@ -115,9 +115,8 @@ $$
 ds_i = \text{Speed (Ground)} + \text{Speed (Water)} + \text{Speed (Air)} + \text{Speed (Anti-Gravity)}
 $$
 
-> [!WARNING]
-> The model will select the first item in the list of drivers, bodies, tires, and gliders that has the maximum sum of
-> statistics. Hence, these results are not necessarily the *unique* best combos.
+> [!INFO]
+> Several combinations will yield the same total score. All the options which give that same score are grouped in the same solution in the tables below.
 
 #### Results
 ###### Best Overall
