@@ -1,4 +1,4 @@
-# Combinatorial Optimization for Mario Kart 8 Deluxe
+# Mario Kart 8 Deluxe best combos: the combinatorial optimization approach
 
 <img src="./imgs/wallpaper.png" style="border-radius: 10px">
 
