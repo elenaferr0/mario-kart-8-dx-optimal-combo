@@ -2,7 +2,7 @@ import os, json
 from typing import Dict
 import pandas as pd
 from docplex.mp.model import Model
-from utils import load_aggregated, plot_pareto_optimal
+from utils import load_aggregated, find_pareto_optimal
 import matplotlib.pyplot as plt
 
 
@@ -130,14 +130,20 @@ if __name__ == '__main__':
             sln = extract_solution(model, name, drivers, bodies, tires, gliders)
             solutions[name] = sln
 
-    with open('outputs/solutions.json', 'w') as f:
+    with open('results/solutions.json', 'w') as f:
         f.write(json.dumps(solutions))
 
-    pareto_optimals = {}
+    pareto_optimal = {}
+    pareto_optimal["driver_speed_acceleration"] = find_pareto_optimal(drivers, ['Speed', 'Acceleration'], "driver")
+    pareto_optimal["driver_speed_handling"] = find_pareto_optimal(drivers, ['Speed', 'Handling'], "driver")
 
-    pareto_optimals["speed_acceleration"] = plot_pareto_optimal(drivers, 'Speed', 'Acceleration')
-    pareto_optimals["speed_handling"] = plot_pareto_optimal(drivers, 'Speed', 'Handling')
-    pareto_optimals["acceleration_handling"] = plot_pareto_optimal(drivers, 'Acceleration', 'Handling')
+    pareto_optimal["driver_speed_acceleration_handling"] = find_pareto_optimal(drivers, ['Speed', 'Acceleration', 'Handling'], "driver")
+    pareto_optimal["driver_speed_acceleration_handling_invincibility"] = find_pareto_optimal(drivers, ['Speed', 'Acceleration', 'Handling', 'Invincibility'], "driver")
 
-    with open('outputs/pareto_optimals.json', 'w') as f:
-        f.write(json.dumps(pareto_optimals))
+    pareto_optimal["body_speed_acceleration_handling"] = find_pareto_optimal(bodies, ['Speed', 'Acceleration', 'Handling'], "body")
+    pareto_optimal["body_speed_acceleration_handling_invincibility"] = find_pareto_optimal(bodies, ['Speed', 'Acceleration', 'Handling', 'Invincibility'], "body")
+
+    overall = pd.concat([drivers, bodies, tires, gliders], ignore_index=True)
+
+    with open('results/pareto_optimal.json', 'w') as f:
+        f.write(json.dumps(pareto_optimal))

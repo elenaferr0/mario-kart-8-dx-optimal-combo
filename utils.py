@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from typing import List
 
 speed_headers = ["GroundSpeed", "WaterSpeed", "AirSpeed", "Anti-GravitySpeed"]
 handling_headers = ["GroundHandling", "WaterHandling", "AirHandling", "Anti-GravityHandling"]
@@ -21,60 +22,107 @@ def load_aggregated(path: str) -> pd.DataFrame:
     return grouped
 
 
-def is_dominated(point_x: float, point_y: float, others: pd.DataFrame, x: str, y: str) -> bool:
-    dominated = (
-            (others[x] >= point_x) & (others[y] >= point_y)
-            & ((others[x] > point_x) | (others[y] > point_y))
-    )
+def is_dominated(point: List[float], others: pd.DataFrame, labels: List[str]) -> bool:
+    # A point is dominated if there exists another point that is:
+    # 1. At least as good in all dimensions
+    # 2. Strictly better in at least one dimension
+
+    # Initialize a mask for all rows in others
+    dominated_mask = pd.Series(True, index=others.index)
+
+    # Check condition 1: At least as good in all dimensions
+    for i, label in enumerate(labels):
+        dominated_mask &= (others[label] >= point[i])
+
+    # If no points satisfy condition 1, return False
+    if not dominated_mask.any():
+        return False
+
+    # Check condition 2: Strictly better in at least one dimension
+    strictly_better = pd.Series(False, index=others.index)
+    for i, label in enumerate(labels):
+        strictly_better |= (others[label] > point[i])
+
+    # Combine conditions 1 and 2
+    dominated = (dominated_mask & strictly_better)
 
     return dominated.any()
 
 
-def plot_pareto_optimal(df: pd.DataFrame, x_label: str, y_label: str):
-    pareto_optimals = {}
+def find_pareto_optimal(df: pd.DataFrame, labels: List[str], subject: str):
+    solution = {
+        "dominated": [],
+        "optimal": [],
+    }
 
-    pareto_optimal_speed = []
-    pareto_optimal_acc = []
+    pareto_optimal = []
+    pareto_dominated = []
 
-    non_pareto_optimal_speed = []
-    non_pareto_optimal_acc = []
-
-    print("Pareto optimal points:")
     for i, row in df.iterrows():
-        x = row[x_label]
-        y = row[y_label]
+        point = row[labels]  # point in n-th dimensional space
 
         others = df[df.index != i]
-        if is_dominated(x, y, others, x_label, y_label):
-            non_pareto_optimal_speed.append(x)
-            non_pareto_optimal_acc.append(y)
-            print(f"Dominated: {row['Names']} ({x_label}: {x}, {y_label}: {y})")
-            pareto_optimals[row['Names']] = {
-                "x": {
-                    "field_name": x_label,
-                    "value": x,
-                },
-                "y": {
-                    "field_name": y_label,
-                    "value": y,
-                },
-                "url": row['Images'],
-            }
+        dominated = is_dominated(point, others, labels)
+        if dominated:
+            pareto_dominated.append(point)
+            print(f"Dominated: {row.Names} ({zip(labels, point)})")
         else:
-            pareto_optimal_speed.append(x)
-            pareto_optimal_acc.append(y)
-            print(f"Optimal: {row['Names']} ({x_label}: {x}, {y_label}: {y})")
+            pareto_optimal.append(point)
+
+        category = "dominated" if dominated else "optimal"
+        solution[category].append({"name": row.Names, "url": row.Images })
+
+    if len(pareto_optimal) == 0:
+        print("No Pareto optimal solutions found.")
+        return None
+
+    if len(labels) > 3:
+        print(f"Not plotting solution as it has {len(labels)} dimensions.")
+        return solution
 
     # Plotting
-    plt.figure(figsize=(8, 6))
-    plt.scatter(non_pareto_optimal_speed, non_pareto_optimal_acc, c='blue', alpha=0.5, label='Non-Pareto Optimal')
-    plt.scatter(pareto_optimal_speed, pareto_optimal_acc, c='red', label='Pareto Optimal')
-    plt.xlabel(x_label)
-    plt.ylabel(y_label)
-    plt.title(f'{x_label} vs {y_label} of Drivers')
-    plt.grid(True)
-    plt.legend()  # Add a legend to distinguish the colors
-    plt.savefig(f'outputs/{x_label}_{y_label}.png')
-    plt.show()
-    plt.close()
-    return pareto_optimals
+    if len(labels) == 2:
+        # 2D plotting
+        x_label, y_label = labels
+        plt.figure(figsize=(8, 6))
+
+        # Convert lists to appropriate arrays for plotting
+        non_pareto_x = [point[0] for point in pareto_dominated]
+        non_pareto_y = [point[1] for point in pareto_dominated]
+        pareto_x = [point[0] for point in pareto_optimal]
+        pareto_y = [point[1] for point in pareto_optimal]
+
+        plt.scatter(non_pareto_x, non_pareto_y, c='blue', alpha=0.5, label='Non-Pareto Optimal')
+        plt.scatter(pareto_x, pareto_y, c='red', label='Pareto Optimal')
+        plt.xlabel(x_label)
+        plt.ylabel(y_label)
+        plt.title(f'{x_label} vs {y_label} of {subject}')
+        plt.grid(True)
+        plt.legend()
+        plt.savefig(f'results/plots/{subject}_{x_label}_{y_label}.png')
+        plt.close()
+    elif len(labels) == 3:
+        # 3D plotting
+        x_label, y_label, z_label = labels
+        fig = plt.figure(figsize=(10, 8))
+        ax = fig.add_subplot(111, projection='3d')
+
+        # Convert lists to appropriate arrays for plotting
+        non_pareto_x = [point[0] for point in pareto_dominated]
+        non_pareto_y = [point[1] for point in pareto_dominated]
+        non_pareto_z = [point[2] for point in pareto_dominated]
+        pareto_x = [point[0] for point in pareto_optimal]
+        pareto_y = [point[1] for point in pareto_optimal]
+        pareto_z = [point[2] for point in pareto_optimal]
+
+        ax.scatter(non_pareto_x, non_pareto_y, non_pareto_z, c='blue', alpha=0.5, label='Non-Pareto Optimal')
+        ax.scatter(pareto_x, pareto_y, pareto_z, c='red', label='Pareto Optimal')
+        ax.set_xlabel(x_label)
+        ax.set_ylabel(y_label)
+        ax.set_zlabel(z_label)
+        ax.set_title(f'{x_label} vs {y_label} vs {z_label} of {subject}')
+        ax.legend()
+        plt.savefig(f'results/plots/{subject}_{x_label}_{y_label}_{z_label}.png')
+        plt.close()
+
+    return solution
