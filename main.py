@@ -2,7 +2,8 @@ import os, json
 from typing import Dict
 import pandas as pd
 from docplex.mp.model import Model
-from utils import load_aggregated
+from utils import load_aggregated, plot_pareto_optimal
+import matplotlib.pyplot as plt
 
 
 def setup_model(m: Model,
@@ -129,6 +130,14 @@ if __name__ == '__main__':
             sln = extract_solution(model, name, drivers, bodies, tires, gliders)
             solutions[name] = sln
 
-    print("Solutions:")
-    with open('solutions.json', 'w') as f:
+    with open('outputs/solutions.json', 'w') as f:
         f.write(json.dumps(solutions))
+
+    pareto_optimals = {}
+
+    pareto_optimals["speed_acceleration"] = plot_pareto_optimal(drivers, 'Speed', 'Acceleration')
+    pareto_optimals["speed_handling"] = plot_pareto_optimal(drivers, 'Speed', 'Handling')
+    pareto_optimals["acceleration_handling"] = plot_pareto_optimal(drivers, 'Acceleration', 'Handling')
+
+    with open('outputs/pareto_optimals.json', 'w') as f:
+        f.write(json.dumps(pareto_optimals))

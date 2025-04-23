@@ -58,14 +58,14 @@ def create_markdown_table(data):
     return markdown
 
 # Read and parse the JSON data
-with open('solutions.json', 'r') as file:
+with open('outputs/solutions.json', 'r') as file:
     json_data = json.load(file)
 
 # Generate the markdown table
 markdown_table = create_markdown_table(json_data)
 
 # Write the markdown to a file
-with open('RESULTS.md', 'w') as file:
+with open('outputs/RESULTS.md', 'w') as file:
     file.write(markdown_table)
 
 print("Markdown table has been generated and saved to 'RESULTS.md'")
