@@ -120,6 +120,11 @@ $$
 > [!NOTE]
 > Several _equivalent_ combinations will yield the same total score (e.g. Wario Wing, Plane Glider, Gold Glider and Paraglider for the _Best Overall_ combo). They will be listed exaustively on the right column of each result table.
 
+
+> [!WARNING]
+> Since the driver score and the tires, glider and body score are independent, the best combo for
+> each driver is simply the best overall combo of tires/glider/body (i.e. the one listed in the _Best Overall_ table).
+
 ###### Best Overall
 
 | Component | Solution |
