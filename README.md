@@ -1,4 +1,4 @@
-# Mario Kart 8 Deluxe best combos: the combinatorial optimization approach
+# Mario Kart 8 Deluxe best combos: the Combinatorial Optimization & Game Theory approach
 
 <img src="wallpaper.png" style="border-radius: 10px">
 
@@ -24,7 +24,7 @@ tires, glider) such that the sum of their combined statistics is maximized.
    pip install cplex docplex
    ```
 
-## Stats
+## Combinatorial Optimization
 
 ### Best overall combo
 
@@ -114,6 +114,17 @@ computed as follows:
 $$
 ds_i = \text{Speed (Ground)} + \text{Speed (Water)} + \text{Speed (Air)} + \text{Speed (Anti-Gravity)}
 $$
+
+## Game Theory
+### Pareto optimality
+A solution is Pareto optimal if there is no other solution that is better in at least one objective without being worse in
+another. 
+
+> [!NOTE]
+For instance, if we have two solutions $A$ (speed 1, acceleration 2) and $B$ (speed 2, acceleration 1), then $A$ is
+better than $B$ in speed, but worse in acceleration. Hence, $A$ is not Pareto optimal because there is a solution that is
+better in one objective (speed) and worse in another (acceleration). On the other hand, if we have two solutions $A$
+(speed 1, acceleration 2) and $B$ (speed 2, acceleration 3), then $B$ is Pareto optimal.
 
 
 #### Results
